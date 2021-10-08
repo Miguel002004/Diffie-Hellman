@@ -6,18 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Calculadora</title>
+    <script src="js/funciones.js"></script>
 </head>
 <body>
     <h1>Persona 1</h1>
     <div class="persona-uno">
         <span>
-            <h2>Variable 1</h2>
-            <input type="number" name="" id="">
+            <h2>Variable a</h2>
+            <input type="number" name="" id="variable-a">
         </span>
+
         <span>
-            <h2>Variable 1</h2>
-            <input type="number" name="" id="">
+            <h2>Variable b</h2>
+            <input type="number" name="" id="variable-b">
         </span>
+
+        <span>
+            <h2>Numero aleatorio i</h2>
+            <input type="number" name="" id="numero-i" readonly="readonly">
+        </span>
+
+        <span>
+            <h2>I</h2>
+            <input type="number" name="" id="variable-I">
+        </span>
+
+        <input type="button" name="Enviar" value="Enviar" id="btn-enviar" class="btn" onclick="enviarDatos();">
+        
+        <span>
+            <h2>K1</h2>
+            <input type="number" name="" id="personauno-k-uno">
+        </span>
+
+    </div>
+    <h1>Persona 2</h1>
+    <div class="persona-uno">
+        <span>
+            <h2>Numero aleatorio j</h2>
+            <input type="number" name="" id="numero-j" readonly="readonly">
+        </span>
+
+        <span>
+            <h2>J</h2>
+            <input type="number" name="" id="variable-J">
+        </span>
+        
+        <span>
+            <h2>K2</h2>
+            <input type="number" name="" id="personados-k-dos">
+        </span>
+
     </div>
 </body>
 </html>
