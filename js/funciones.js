@@ -17,6 +17,7 @@ function enviarDatos() {
         obtenerI(); 
         obtenerJ(); 
         calcularK();
+        calcularHash();
     } else 
     alert("Error: Respeta la regla 1<a<b"); 
 }
@@ -45,4 +46,7 @@ function calcularK() {
     K2 = (Math.pow(I, j)) % b; 
     document.getElementById("personados-k-dos").value = K2; 
 }
-
+function calcularHash(){
+    document.getElementById("hashk1").value = md5(K1.toString());
+    document.getElementById("hashk2").value = md5(K2.toString());
+}
