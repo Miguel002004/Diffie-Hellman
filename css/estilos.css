@@ -1,3 +1,6 @@
+:root {
+    --alinear: center;
+}
 @import url('http://fonts.cdnfonts.com/css/graphik');
 
 body {
@@ -16,7 +19,7 @@ p {
     font-weight: 600;
 }
 
-input[type="number"] {
+input[type="number"], input[type="text"] {
     width: 70%;
     height: 30px;
     border: 1px solid white;
@@ -29,6 +32,9 @@ textarea {
     border: 1px solid white;
     border-radius: 0.5em;
     margin-top: 5px;
+    font-family: 'Graphik', sans-serif;
+    text-align: center;
+    font-size: 17px;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -44,26 +50,28 @@ input[type="number"]::-webkit-outer-spin-button {
     color: white;
     width: 100px;
     height: 30px;
-
+    margin-top: 10px;
 }
 
 /*Contenedores*/
 .contenedor {
     width: 100%;
-    height: 400px;
     display: flex;
     flex-direction: row;
-    background-color: transparent;
-    background-color: violet;
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 5px;
+    align-items: stretch;
 }
 
-.contenedor-variables {
+
+.contenedor-variables, .contenedor-resultados {
     width: 50%;
-    height: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .contenedor-variables-usuario {
@@ -73,11 +81,11 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid #fae275;;
+    border: 1px solid #fae275;
     box-sizing: border-box;
     border-radius: 1em;
     margin: 2px;
-
+    padding: 5px;
 }
 
 span img {
@@ -85,4 +93,29 @@ span img {
     height: 90px;
     border-radius: 100%;
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contenedor-resultados {
+    border: 1px solid #fae275;
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 5px;
+    margin-top: 23px;
+}
+
+.contenedor-resultados-k, .contenedor-resultados-hash {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-resultados-k, .contenedor-resultados-hash input[type="text"], input[type="number"]{
+    text-align: var(--alinear);
+    font-size: 1em;
+}
+
+.contenedor-resultados-hash input[type="text"] {
+    width: 90%;
 }

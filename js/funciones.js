@@ -18,6 +18,8 @@ function enviarDatos() {
         obtenerJ(); 
         calcularK();
         calcularHash();
+        document.getElementById("variable-a").value = ""; 
+        document.getElementById("variable-b").value = ""; 
     } else 
     alert("Error: Respeta la regla 1<a<b"); 
 }
