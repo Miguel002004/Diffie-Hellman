@@ -1,63 +1,88 @@
+@import url('http://fonts.cdnfonts.com/css/graphik');
+
 body {
-    background-color: teal;
+    background-color:  #254662;
+    font-family: 'Graphik', sans-serif;
 }
 
-h1 {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 35px;
-    position: relative;
-    bottom: 5px;
-    margin: 0;
+p {
+    font-size: 1.3em;
+    color: #fae275;
 }
 
-h2 {
-    color: thistle;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    position: relative;
-    bottom: 5px;
-    margin: 0;
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
 }
 
 input[type="number"] {
-    width: 200px;
+    width: 70%;
     height: 30px;
     border: 1px solid white;
     border-radius: 0.5em;
 }
 
-.persona-uno {
-    width: 100%;
-    height: 200px;
+textarea {
+    width: 70%;
+    height: 70px;
     border: 1px solid white;
     border-radius: 0.5em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    bottom: 5px;
-    margin: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-top: 5px;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 .btn {
     border-radius: 0.5em;
     border: 1px solid white;
-    background-color: steelblue;
+    background-color: #175492;
     color: white;
     width: 100px;
     height: 30px;
 
 }
 
-span {
-    margin: 10px;
+/*Contenedores*/
+.contenedor {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    background-color: violet;
 }
 
-.persona-uno input[type="number"]::-webkit-inner-spin-button,
-.persona-uno input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.contenedor-variables {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-variables-usuario {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #fae275;;
+    box-sizing: border-box;
+    border-radius: 1em;
+    margin: 2px;
+
+}
+
+span img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-top: 20px;
 }

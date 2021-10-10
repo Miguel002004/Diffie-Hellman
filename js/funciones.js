@@ -23,16 +23,12 @@ function enviarDatos() {
 
 function obtenerI(){
     i = numAleatorio();    
-    document.getElementById("numero-i").value = i; 
     I = (Math.pow(a, i)) % b; 
-    document.getElementById("variable-I").value = I; 
 }
 
 function obtenerJ(){
     j = numAleatorio();    
-    document.getElementById("numero-j").value = j; 
     J = (Math.pow(a, j)) % b; 
-    document.getElementById("variable-J").value = J; 
 }
 
 function numAleatorio(){
