@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/5779/5779840.png"/>
-    <title>Algoritmo Diffie-Hellman</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="personas">
+            <p>Persona 1</p>
+            <input type="number" name="" id="variable-a" placeholder="Variable A">
+            <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
+        </div>
+    
+        <br>
+        <div class="personas">
+            <p>Persona 2</p>
+            <input type="number" name="" id="variable-b" placeholder="Variable B">
+            <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
+        </div>
+        <input type="button" name="Enviar" value="Enviar" id="btn-enviar" class="btn" onclick="enviarDatos();">
+    </div>
+    <br>
+    <div class="cont">
+        <div id="k">
+            <p>K1</p>
+            <input type="number" name="" id="personauno-k-uno" readonly="readonly">
+            <p>K2</p>
+            <input type="number" name="" id="personados-k-dos" readonly="readonly">
+        </div>
+
+        <br>
+
+        <div id="hash">
+            <p>Hash de K1</p>
+            <input type="text" id="hashk1" readonly="readonly">
+            <p>Hash de K2</p>
+            <input type="text" id="hashk2" readonly="readonly">
+        </div>
+    </div>
+
+
+</body>
     <script src="js/md5.js"></script>
     <script src="js/funciones.js"></script>
-</head>
-
-<body>
-    <p class="titulo">Algoritmo Diffie-Hellman</p>
-    <div class="contenedor">
-        <article class="contenedor-variables">
-            <article class="contenedor-variables-usuario">
-                <span>
-                    <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t39.30808-6/214771924_2077353959085817_2576756128257218230_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEVlylNZnq9KLQrskUzQR3LeFMpH3u08px4Uykfe7TynGs6flUBKIDrcFQUGqtEnR_7byhg-6NJZW8YXL4QAiDS&_nc_ohc=v7jRkymWdG4AX_PipkY&_nc_ht=scontent.fmex10-4.fna&oh=f0dd51cf2f53f1956f4d25e3d6407af4&oe=616915E0" alt="">
-                </span>
-                <input type="number" name="" id="variable-a" placeholder="Variable A">
-                <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
-            </article>
-            <article class="contenedor-variables-usuario">
-                <span>
-                    <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t1.6435-9/176078042_2909053189376798_7385452509304117119_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGOILnbGMStYVNx-Fe-pgP0W2G7Ao_ceiNbYbsCj9x6I5OWRlWyvoKqrZZOV4VexqFC-oMrWbNNhfI6hTWP1unU&_nc_ohc=Jn2XQ0Y7a2IAX8J2xNU&tn=aZrD5uQt4mAfGZDG&_nc_ht=scontent.fmex10-4.fna&oh=f86c4b503a47d48da8fc76db5cbf4fe1&oe=61884AEF" alt="">
-                </span>
-                <input type="number" name="" id="variable-b" placeholder="Variable B">
-                <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
-            </article>
-            <input type="button" name="Enviar" value="Enviar" id="btn-enviar" class="btn" onclick="enviarDatos();">
-        </article>
-
-        <article class="contenedor-resultados">
-            <article class="contenedor-resultados-k">
-                <p>K1</p>
-                <input type="number" name="" id="personauno-k-uno" readonly="readonly">
-                <p>K2</p>
-                <input type="number" name="" id="personados-k-dos" readonly="readonly">
-            </article>
-            
-            <article class="contenedor-resultados-hash">
-                <p>Hash de K1</p>
-                <input type="text" id="hashk1" readonly="readonly">
-                <p>Hash de K2</p>
-                <input type="text" id="hashk2" readonly="readonly">
-            </article>
-        </article>
-    </div>
-</body>
-
 </html>
